@@ -1,5 +1,6 @@
 # corelinux
+build
 
 ```bash
-sudo mkarchiso -v -w work -o core
+sudo mkarchiso -v -w work -o iso core
 ```
