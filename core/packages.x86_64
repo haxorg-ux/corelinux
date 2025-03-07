@@ -160,7 +160,6 @@ pacman-mirrorlist
 pkgconf
 samba
 tcpdump
-tree
 unrar
 wget
 zip
@@ -200,6 +199,7 @@ wl-clipboard
 
 ## Xorg Server ------------------------------
 xorg
+xorg-server
 
 ## Touchpad and Mouse ------------------------------
 xorg-xinput
