@@ -170,19 +170,19 @@ plasma-framework5
 ttf-jetbrains-mono-nerd
 
 ###bluetooth
-#blueberry
-#bluez
-#bluez-libs
-#bluez-utils
+blueberry
+bluez
+bluez-libs
+bluez-utils
 
 ###printers
-#cups
-#cups-filters
-#cups-pdf
-#ghostscript
-#gsfonts
-#gutenprint
-#system-config-printer
+cups
+cups-filters
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+system-config-printer
 
 # dual boot
 os-prober
@@ -284,7 +284,7 @@ spectacle
 cachy-browser
 flatpak
 meld
-#obsidian
+obsidian
 telegram-desktop
 thunderbird
 discord
@@ -293,9 +293,9 @@ timeshift
 gparted
 
 ## ---- complemento desktop
-#libreoffice-fresh
-#libreoffice-fresh-es
-#gimp
+libreoffice-fresh
+libreoffice-fresh-es
+gimp
 
 # dependencias calamares
 yaml-cpp
