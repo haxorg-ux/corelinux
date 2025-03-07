@@ -42,14 +42,18 @@ The examples are not exhaustive.
 
 #sidebarMenuApp {
 	padding: 3px;
-	background-color: #292F34;
+	background-color: #282c34;
 }
 
 QWidget {
-  font: 12px;   
+  background-color: #282c34;
+  font: 12px;
+  color: #c8ccd4; 
 }
 
 QTextEdit, QListView {
+	background-color: #282c34;
+	border: none;
 }
 QDialogButtonBox {
 }
@@ -108,9 +112,14 @@ QDialogButtonBox {
 /* ########## QLIST VIEW ########## */
 
 QListView {
-		font: 12px;
+	background-color: #282c34;
+	font: 12px;
 }
 
+QListView::item:selected, QTreeView::item:selected {
+	background-color: #3a3f4b;
+	color: #ffffff;
+}
 
 /* ########## QLINE EDIT ########## */
 
@@ -229,6 +238,7 @@ QLineEdit#textBoxUserPassword, QLineEdit#textBoxRootPassword {
 /* ########## COMBO BOX ########## */
 
 QComboBox {
+	background-color: #282c34;
 	font: 12px;
 }
 
@@ -243,6 +253,7 @@ QComboBox::down-arrow {
 /* ########## SPIN BOX ########## */
 
 QSpinBox {
+	background-color: #282c34;
 	font: 12px;
 }
 
@@ -253,13 +264,51 @@ QLineEdit {
 /* ########## TREE VIEW ########## */
 
 QTreeView {
+	background-color: #282c34;
 	font: 12px;
 	show-decoration-selected: 0;
 }
 
-QTreeView::item {
-	padding: 2px;
+QTreeView::item, QListView::item {
+	padding: 1px;
+	margin: 0px;
 }
+
+QListWidget::item:alternate, QListView::item:alternate, QTreeView::item:alternate {
+	background-color: #282c34; /* Igual al fondo principal */
+}
+
+QListWidget::item:selected, QListView::item:selected, QTreeView::item:selected {
+	background-color: #3a3f4b;
+	color: #ffffff;
+}
+
+QCheckBox {
+	color: #c8ccd4; /* Color del texto */
+	spacing: 5px;
+}
+
+/* Estado normal */
+QCheckBox::indicator {
+	width: 14px;
+	height: 14px;
+	background-color: #363b44;
+	border: 1px solid #4f5b66;
+	border-radius: 3px;
+}
+
+/* Estado marcado */
+QCheckBox::indicator:checked {
+	background-color: #4f5b66;
+	border: 1px solid #ffffff;
+}
+
+/* Hover para mejor visibilidad */
+QCheckBox::indicator:hover {
+	border: 1px solid #ff7f7f;
+}
+
+
 
 QTreeView::branch:has-siblings:!adjoins-item {
 }
@@ -288,6 +337,7 @@ QItemSelectionModel::Select {
 /* ########## HEADER VIEW ########## */
 
 QHeaderView::section {
+	background-color: #282c34;
   font : 12px;
 }
 
