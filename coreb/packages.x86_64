@@ -10,7 +10,7 @@ bind
 bolt
 brltty
 b43-fwcutter
-broadcom-wl-dkms
+#broadcom-wl-dkms
 btrfs-progs
 clonezilla
 cloud-init
