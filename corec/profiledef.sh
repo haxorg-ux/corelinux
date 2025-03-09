@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="corelinux"
+iso_name="corelinux-lts"
 iso_label="CORE_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Core linux <https://archlinux.org>"
 iso_application="Core linux Live/Rescue DVD"
