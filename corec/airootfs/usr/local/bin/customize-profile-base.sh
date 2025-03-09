@@ -25,37 +25,7 @@ sed -i '/etc/mkinitcpio.conf' \
 	-e "s/microcode/microcode plymouth/g" \
 	-e "s/#COMPRESSION=\"xz\"/COMPRESSION=\"xz\"/g"
 
-# sed -i -e "s/microcode/microcode plymouth/g" \
-#        -e "s/#COMPRESSION=\"xz\"/COMPRESSION=\"xz\"/g" /etc/mkinitcpio.conf
-
-
-## Fix Initrd Generation in Installed System
-
-#cat > "/etc/mkinitcpio.d/linux.preset" <<- _EOF_
-	# mkinitcpio preset file for the 'linux-lts' package
-
-#	ALL_kver="/boot/vmlinuz-linux-lts"
-#	ALL_config="/etc/mkinitcpio.conf"
-
-#	PRESETS=('default' 'fallback')
-
-	#default_config="/etc/mkinitcpio.conf"
-#	default_image="/boot/initramfs-linux-lts.img"
-	#default_options=""
-
-	#fallback_config="/etc/mkinitcpio.conf"
-#	fallback_image="/boot/initramfs-linux-lts-fallback.img"
-#	fallback_options="-S autodetect"    
-#_EOF_
-
-## Delete ISO specific init files
 rm -rf /etc/mkinitcpio.conf.d
-
-## plymouth
-#plymouth-set-default-theme -R spinner
-
-## Regenerate initramfs images
-#mkinitcpio -P
 
 ## -------------------------------------------------------------- ##
 
